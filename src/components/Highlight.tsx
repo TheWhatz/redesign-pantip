@@ -52,8 +52,10 @@ export default function Highlight() {
             >
               <Image
                 src={item.image_url[2] ?? ''}
-                className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-contain"
                 alt="..."
+                width={600}
+                height={450}
               />
             </div>
           ))}

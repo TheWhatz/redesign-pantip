@@ -27,8 +27,10 @@ export default function Footer() {
             >
               <Image
                 src="https://ptcdn.info/mobile/logo-mobile-pantip-white.png"
-                className="me-3 h-10"
+                className="me-3 h-10 object-contain"
                 alt="Pantip Logo"
+                width={130}
+                height={112}
               />
             </a>
             <div className="grid grid-rows-1 py-5">
@@ -42,6 +44,8 @@ export default function Footer() {
                     src={item}
                     className="me-3 h-10"
                     alt="Pantip Logo"
+                    width={130}
+                    height={112}
                   />
                 ))}
               </div>

@@ -17,6 +17,8 @@ export default function Header() {
               className="h-10 w-auto"
               src="https://ptcdn.info/mobile/logo-mobile-pantip-white.png"
               alt=""
+              width={130}
+              height={112}
             />
           </a>
         </div>

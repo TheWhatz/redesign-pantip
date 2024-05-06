@@ -14,6 +14,18 @@ const bundleAnalyzer = withBundleAnalyzer({
 export default withSentryConfig(
   bundleAnalyzer(
     withNextIntlConfig({
+      images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'ptcdn.info',
+          },
+          {
+            protocol: 'https',
+            hostname: 'pantip.com',
+          },
+        ],
+      },
       eslint: {
         dirs: ['.'],
       },
