@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 import Search from './Search';
@@ -10,9 +11,9 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="https://pantip.com/" className="-m-1.5 p-1.5">
             <span className="sr-only">Pantip</span>
-            <img
+            <Image
               className="h-10 w-auto"
               src="https://ptcdn.info/mobile/logo-mobile-pantip-white.png"
               alt=""
@@ -40,7 +41,8 @@ export default function Header() {
             style={{ borderRadius: 25, borderWidth: 1 }}
           >
             <a
-              href="#"
+              href="https://pantip.com/"
+              aria-label="details"
               className="content-center text-sm font-semibold leading-6 text-white"
             >
               <svg
@@ -59,7 +61,8 @@ export default function Header() {
               </svg>
             </a>
             <a
-              href="#"
+              aria-label="login"
+              href="https://pantip.com/"
               className="content-center text-sm font-semibold leading-6 text-white"
             >
               <svg

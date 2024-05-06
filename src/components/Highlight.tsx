@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-interface Highlight {
+interface Highlights {
   success: string;
   data: Array<HighlightData>;
 }
@@ -16,7 +17,7 @@ interface HighlightData {
 }
 
 export default function Highlight() {
-  const [highlight, setHighlight] = useState<Highlight>();
+  const [highlight, setHighlight] = useState<Highlights>();
 
   const getHighlight = async () => {
     const response = await fetch(
@@ -43,16 +44,14 @@ export default function Highlight() {
     >
       {highlight?.success ? (
         <div className="relative h-56 overflow-hidden rounded-b-lg md:h-96">
-          {highlight.data.map((item, index) => (
+          {highlight.data.map((item) => (
             <div
-              key={index}
-              className={`${
-                index === 0 ? 'active' : 'hidden'
-              } duration-700 ease-in-out`}
+              key={item.name}
+              className="duration-700 ease-in-out"
               data-carousel-item
             >
-              <img
-                src={item.image_url[2]}
+              <Image
+                src={item.image_url[2] ?? ''}
                 className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
               />

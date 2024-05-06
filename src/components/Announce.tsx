@@ -38,9 +38,9 @@ export default function Announce() {
     <div>
       {annouce?.success ? (
         <ul>
-          {annouce.data?.map((item: any, index: any) => (
+          {annouce.data?.map((item: any) => (
             <li
-              key={index}
+              key={item}
               className="flex gap-x-2 py-2 pl-4 text-white "
               style={{ borderBottomWidth: 0.5, borderBottomColor: '#7976a0' }}
             >
@@ -52,6 +52,7 @@ export default function Announce() {
               ) : null}
               <div
                 className="pr-4"
+                // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{ __html: item.display_message }}
               />
             </li>

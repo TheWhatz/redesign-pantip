@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Header />
       <div style={{ backgroundColor: '#3C3963' }}>
-        <div className="row mx-auto max-w-7xl">
+        <div className="mx-auto grid max-w-7xl grid-rows-1">
           <div className="p-5 sm:px-4 lg:flex-1 lg:px-3">
             <Box title="Announce">
               <Announce />

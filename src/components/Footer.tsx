@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const aboutUs = [
@@ -20,21 +21,24 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="lg:flex lg:justify-between">
           <div className="md:mb-0">
-            <a href="#" className="flex justify-center md:justify-start">
-              <img
+            <a
+              href="https://pantip.com/"
+              className="flex justify-center md:justify-start"
+            >
+              <Image
                 src="https://ptcdn.info/mobile/logo-mobile-pantip-white.png"
                 className="me-3 h-10"
                 alt="Pantip Logo"
               />
             </a>
-            <div className="row py-5 ">
+            <div className="grid grid-rows-1 py-5">
               <p className="flex justify-center text-white md:justify-start">
                 ดาวน์โหลดได้แล้ววันนี้
               </p>
-              <div className="flex grid grid-cols-1 justify-items-center gap-x-3 gap-y-5 pt-5 sm:grid-cols-1 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
-                {downloadUrl.map((item, index) => (
-                  <img
-                    key={index}
+              <div className="grid grid-cols-1 justify-items-center gap-x-3 gap-y-5 pt-5 sm:grid-cols-1 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
+                {downloadUrl.map((item) => (
+                  <Image
+                    key={item}
                     src={item}
                     className="me-3 h-10"
                     alt="Pantip Logo"
@@ -50,17 +54,17 @@ export default function Footer() {
               </h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline ">
+                  <a href="https://pantip.com/" className="hover:underline ">
                     ร่วมงานกับ Pantip
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="https://pantip.com/" className="hover:underline">
                     Download App Pantip
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="https://pantip.com/" className="hover:underline">
                     Pantip Certified Developer
                   </a>
                 </li>
@@ -71,9 +75,9 @@ export default function Footer() {
                 เกี่ยวกับพันทิป
               </h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                {aboutUs.map((item, index) => (
-                  <li key={index} className="mb-4">
-                    <a href="#" className="hover:underline">
+                {aboutUs.map((item) => (
+                  <li key={item} className="mb-4">
+                    <a href="https://pantip.com/" className="hover:underline">
                       {item}
                     </a>
                   </li>
@@ -83,13 +87,13 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
-        <div className="item-center sm:flex sm:items-center sm:justify-between">
+        <div className="justify-center sm:flex sm:items-center sm:justify-between">
           <span className="justify-items-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024 Internet Marketing co., ltd
           </span>
           <div className="mt-4 flex justify-center sm:mt-0 sm:justify-center">
             <a
-              href="#"
+              href="https://pantip.com/"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -103,7 +107,7 @@ export default function Footer() {
               <span className="sr-only">Facebook page</span>
             </a>
             <a
-              href="#"
+              href="https://pantip.com/"
               className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -117,7 +121,7 @@ export default function Footer() {
               <span className="sr-only">X page</span>
             </a>
             <a
-              href="#"
+              href="https://pantip.com/"
               className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -131,7 +135,7 @@ export default function Footer() {
               <span className="sr-only">Youtube page</span>
             </a>
             <a
-              href="#"
+              href="https://pantip.com/"
               className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -145,7 +149,7 @@ export default function Footer() {
               <span className="sr-only">Instragram page</span>
             </a>
             <a
-              href="#"
+              href="https://pantip.com/"
               className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
